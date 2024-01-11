@@ -18,3 +18,14 @@ if __name__=='__main__':
              Pico("Teide", 3718, "Santa Cruz de Tenerife")]
              
     mostrar_picos1(PICOS)
+    exercise_functions_list =  [nombres_ord_alfabetico(PICOS),
+                                altitud_y_nombre(PICOS),
+                                picos_en_provincia(PICOS),
+                                picos_con_altitud_ord(PICOS),
+                                suma_altitudes_en_provincia(PICOS),
+                                nombre_y_altitud_mas_alto(PICOS),
+                                altitud_media(PICOS),
+                                provincia_con_picos_ord(PICOS)]
+
+    for i,function in enumerate(exercise_functions_list, 1):
+        print(f'Exercise 2.{i}:\n\t{function}')
